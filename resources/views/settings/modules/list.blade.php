@@ -22,7 +22,7 @@
                         <div class="kt-portlet__head-actions">
 
                             <a href="{{ route('modules.create') }}" class="btn btn-brand btn-elevate btn-icon-sm">
-                                ADD New Record
+                                Add New Module
                             </a>
 
                             <a href="{{ route('home') }}" class="btn btn-secondary btn-elevate btn-icon-sm">Back</a>
@@ -70,7 +70,7 @@
                                             <td>{{ $dt->title }}</td>
                                             <td>
 
-                                                <a  href="{{ route('modules.edit',$dt->id) }}" id="btn-edit-{{$dt->id}}" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
+                                                <a  href="{{ route('modules.edit',$dt->id) }}" id="btn-edit-{{$dt->id}}" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="Edit">
                                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                                 </a>
 
@@ -78,7 +78,7 @@
                                                     @csrf
                                                     @method('delete')
                                                     <button type="button" onclick="deleteModule(this,'{{ $dt->id }}')" id="btn-{{$dt->id}}" class="btn btn-sm btn-clean btn-icon btn-icon-md">
-                                                        <i class="fa fa-trash-o text-danger" aria-hidden="true"></i>
+                                                        <i class="fa fa-trash-o text-danger" aria-hidden="true" title="Delete"></i>
                                                     </button>
                                                 </form>
                                             </td>

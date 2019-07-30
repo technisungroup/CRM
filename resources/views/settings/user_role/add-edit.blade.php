@@ -10,7 +10,7 @@
                         <div class="kt-portlet__head">
                             <div class="kt-portlet__head-label">
                                 <h3 class="kt-portlet__head-title">
-                                    User Role Form
+                                    User Role
                                 </h3>
                             </div>
                         </div>

@@ -22,7 +22,7 @@
                             <div class="kt-portlet__head-actions">
 
                                 <a href="{{ route('user-role.create') }}" class="btn btn-brand btn-elevate btn-icon-sm">
-                                    ADD New Record
+                                    Add New Role
                                 </a>
 
                                 <a href="{{ route('home') }}" class="btn btn-secondary btn-elevate btn-icon-sm">Back</a>
@@ -69,7 +69,7 @@
                                                 <td>{{ $key+1 }}</td>
                                                 <td>{{ $dt->title }}</td>
                                                 <td>
-                                                    <a  href="{{ route('user-role.edit',$dt->id) }}" id="btn-edit-{{$dt->id}}" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="View">
+                                                    <a  href="{{ route('user-role.edit',$dt->id) }}" id="btn-edit-{{$dt->id}}" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="Edit">
                                                         <i class="fa fa-pencil" aria-hidden="true"></i>
                                                     </a>
 
@@ -77,7 +77,7 @@
                                                         @csrf
                                                         @method('delete')
                                                         <button type="button" onclick="deleteUserRole(this,'{{ $dt->id }}')" id="btn-{{$dt->id}}" class="btn btn-sm btn-clean btn-icon btn-icon-md">
-                                                            <i class="fa fa-trash-o text-danger" aria-hidden="true"></i>
+                                                            <i class="fa fa-trash-o text-danger" aria-hidden="true" title="Delete"></i>
                                                         </button>
                                                     </form>
                                                 </td>

@@ -17,7 +17,7 @@
                             <div class="kt-portlet__head-actions">
 
                                 <a href="{{ route('users.create') }}" class="btn btn-brand btn-elevate btn-icon-sm">
-                                    ADD New User
+                                    Add New User
                                 </a>
 
                                 <a href="{{ route('home') }}" class="btn btn-secondary btn-elevate btn-icon-sm">Back</a>
@@ -81,7 +81,7 @@
                                                         @method('delete')
                                                         <button type="button" onclick="deleteUser(this,'{{ $dt->id }}')" id="btn-{{$dt->id}}" class="btn btn-sm btn-clean btn-icon btn-icon-md" title="Activated">
                                                             {{--<i class="fa fa-trash-o text-danger" aria-hidden="true"></i>--}}
-                                                            <i class="fa fa-toggle-on text-success" aria-hidden="true"></i>
+                                                            <i class="fa fa-toggle-on text-success" aria-hidden="true" title="Delete"></i>
                                                             {{--Deactivate--}}
                                                         </button>
                                                     </form>
